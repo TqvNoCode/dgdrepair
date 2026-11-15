@@ -1,4 +1,4 @@
-# GDGRepair — Landing Page Dịch Vụ Chăm Sóc & Bảo Dưỡng Máy Tính
+# GDGRepair — Dịch Vụ Chăm Sóc & Bảo Dưỡng Máy Tính
 
 GDGRepair — dịch vụ kỹ thuật cài đặt hệ điều hành Windows bản quyền, vệ sinh tản nhiệt PTM7950, nâng cấp phần cứng RAM/SSD và xử lý sự cố máy tính.
 ---
