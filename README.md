@@ -1,7 +1,6 @@
 # GDGRepair — Landing Page Dịch Vụ Chăm Sóc & Bảo Dưỡng Máy Tính
 
-Landing Page giới thiệu GDGRepair — dịch vụ kỹ thuật cài đặt hệ điều hành Windows bản quyền, vệ sinh tản nhiệt PTM7950, nâng cấp phần cứng RAM/SSD và xử lý sự cố máy tính, được tài trợ và trực thuộc **Google Developer Groups on Campus - DUT** tại **Trường Đại học Bách Khoa - Đại học Đà Nẵng** (54 Nguyễn Lương Bằng, Liên Chiểu, Đà Nẵng). Dự án được xây dựng bằng **HTML5 + CSS3 + Vanilla JS (ES6+ Modules)**.
-
+GDGRepair — dịch vụ kỹ thuật cài đặt hệ điều hành Windows bản quyền, vệ sinh tản nhiệt PTM7950, nâng cấp phần cứng RAM/SSD và xử lý sự cố máy tính.
 ---
 
 ## 1. Công nghệ và kiến trúc
@@ -9,7 +8,6 @@ Landing Page giới thiệu GDGRepair — dịch vụ kỹ thuật cài đặt h
 ### Công nghệ sử dụng
 `HTML5 + CSS3 (CSS Layers & Custom Properties) + Vanilla JavaScript (ES6 Modules) + Fetch API (Dynamic Partials) + LocalStorage API + WAI-ARIA Accessibility`
 
-- **100% Thuần Web (Vanilla)**: Tuyệt đối không sử dụng framework (No React, Vue, Angular), không công cụ đóng gói (No Vite, Webpack), không thư viện CSS tiện ích (No Tailwind, Bootstrap) và không phụ thuộc vào `npm` hay `node_modules`.
 - **Bảo mật & Trợ năng**: Tích hợp bẫy tiêu điểm (Focus Trap), phím thoát Escape, mã hóa chống lỗ hổng XSS (`escapeHTML`) và vùng thông báo trợ năng `aria-live="polite"` đạt chuẩn quốc tế WAI-ARIA (a11y).
 
 ### Kiến trúc hệ thống
@@ -148,21 +146,3 @@ php -S localhost:8000
 
 ---
 
-### B. Triển khai trực tuyến lên GitHub Pages
-
-Dự án đã được tích hợp sẵn quy trình triển khai tự động qua **GitHub Actions** tại [.github/workflows/deploy.yml](file:///home/tqv/Desktop/GCD_project/GDGRepair/.github/workflows/deploy.yml). Vì là trang web tĩnh thuần túy không có bước build (No Node.js, No Vite), tốc độ triển khai diễn ra cực kỳ nhanh:
-
-1. Đẩy toàn bộ mã nguồn lên repository GitHub của bạn:
-   ```bash
-   git add .
-   git commit -m "feat: complete project rebuild with pure HTML5, CSS3 and Vanilla JS"
-   git push origin main
-   ```
-2. Trên giao diện GitHub của repository:
-   - Vào mục **Settings** > chọn mục **Pages** (ở cột bên trái).
-   - Tại mục **Build and deployment** > **Source**, chuyển sang **GitHub Actions**.
-3. Workflow `deploy.yml` sẽ tự động kích hoạt và xuất bản trang web trực tiếp tại địa chỉ:
-   ```
-   https://<username>.github.io/<repo-name>/
-   ```
-4. Người xem có thể truy cập ngay lập tức từ liên kết trên mà không cần cài đặt bất kỳ phần mềm máy chủ nào.
