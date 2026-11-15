@@ -1,0 +1,118 @@
+<section id="services" class="section-padding services-section" aria-labelledby="services-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">Danh mục hỗ trợ</span>
+      <h2 id="services-title" class="section-title">Dịch vụ của chúng tôi</h2>
+      <p class="section-subtitle">
+        Các giải pháp kỹ thuật phần cứng và phần mềm chuyên sâu được thực hiện chuẩn xác, an toàn và tối ưu cho máy tính của bạn.
+      </p>
+    </div>
+
+    <!-- Filter & Search Toolbar -->
+    <div class="services-toolbar">
+      <!-- Category Tabs -->
+      <div 
+        id="service-category-tabs" 
+        class="filter-tabs" 
+        role="tablist" 
+        aria-label="Lọc theo danh mục dịch vụ"
+      >
+        <button 
+          type="button" 
+          role="tab" 
+          class="service-tab-btn is-active" 
+          data-category="all" 
+          aria-selected="true"
+        >
+          Tất cả
+        </button>
+        <button 
+          type="button" 
+          role="tab" 
+          class="service-tab-btn" 
+          data-category="windows" 
+          aria-selected="false"
+        >
+          Cài Windows
+        </button>
+        <button 
+          type="button" 
+          role="tab" 
+          class="service-tab-btn" 
+          data-category="cleaning" 
+          aria-selected="false"
+        >
+          Vệ sinh
+        </button>
+        <button 
+          type="button" 
+          role="tab" 
+          class="service-tab-btn" 
+          data-category="hardware" 
+          aria-selected="false"
+        >
+          Nâng cấp
+        </button>
+        <button 
+          type="button" 
+          role="tab" 
+          class="service-tab-btn" 
+          data-category="software" 
+          aria-selected="false"
+        >
+          Phần mềm
+        </button>
+        <button 
+          type="button" 
+          role="tab" 
+          class="service-tab-btn tab-favorites" 
+          data-category="favorites" 
+          aria-selected="false"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span>Yêu thích</span>
+        </button>
+      </div>
+
+      <!-- Search Input -->
+      <div class="search-input-wrapper">
+        <label for="service-search-input" class="sr-only">Tìm kiếm dịch vụ</label>
+        <span class="search-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </span>
+        <input 
+          type="search" 
+          id="service-search-input" 
+          class="search-input" 
+          placeholder="Tìm theo tên dịch vụ hoặc tính năng..." 
+          autocomplete="off"
+        />
+        <button 
+          type="button" 
+          id="service-search-clear" 
+          class="search-clear-btn" 
+          aria-label="Xóa tìm kiếm" 
+          title="Xóa tìm kiếm"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Live Announcement for Screen Readers -->
+    <div id="service-results-count" class="sr-only" aria-live="polite"></div>
+
+    <!-- Dynamic Services Grid (Rendered by services.js) -->
+    <div id="services-grid" class="services-grid" role="region" aria-label="Danh sách thẻ dịch vụ">
+      <!-- Nội dung được kết xuất tự động từ mockData.js -->
+    </div>
+  </div>
+</section>

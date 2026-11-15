@@ -1,0 +1,156 @@
+<!-- ========================================== -->
+<!-- MOBILE DRAWER OVERLAY                      -->
+<!-- ========================================== -->
+<div id="drawer-backdrop" class="drawer-backdrop" aria-hidden="true"></div>
+
+<aside id="mobile-drawer" class="drawer-panel" role="dialog" aria-modal="true" aria-label="Menu điều hướng di động" aria-hidden="true">
+  <div class="drawer-header">
+    <div class="drawer-brand">
+      <div class="logo-icon-wrap" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="32" height="32" fill="none">
+          <rect width="48" height="48" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.5" />
+          <!-- Left bracket < (Red top, Blue bottom) -->
+          <path d="M16 16L10 24" stroke="#EA4335" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M10 24L16 32" stroke="#4285F4" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+          <!-- Right bracket > (Yellow bottom, Green top) -->
+          <path d="M38 24L32 32" stroke="#FBBC04" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M32 16L38 24" stroke="#0F9D58" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+          <circle cx="24" cy="24" r="3.5" fill="#4285F4" />
+          <path d="M24 14V17M24 31V34M14 24H17M31 24H34" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </div>
+      <div>
+        <div class="drawer-title">GDGRepair</div>
+        <div class="drawer-subtitle">GDG on Campus - DUT</div>
+      </div>
+    </div>
+    <button type="button" id="drawer-close" class="drawer-close-btn" aria-label="Đóng menu">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+  </div>
+
+  <nav class="drawer-nav" aria-label="Menu di động">
+    <ul class="drawer-links">
+      <li><a href="#hero" class="drawer-link">Trang chủ</a></li>
+      <li><a href="#services" class="drawer-link">Dịch vụ</a></li>
+      <li><a href="#pricing" class="drawer-link">Bảng giá</a></li>
+      <li><a href="#process" class="drawer-link">Quy trình</a></li>
+      <li><a href="#faq" class="drawer-link">Câu hỏi thường gặp</a></li>
+      <li><a href="#contact" class="drawer-link">Liên hệ đặt lịch</a></li>
+    </ul>
+  </nav>
+
+  <div class="drawer-footer">
+    <div class="drawer-actions-row">
+      <!-- Dark/Light Theme Button in Drawer -->
+      <button type="button" class="btn btn-outline btn-block" data-action="toggle-theme" aria-label="Chuyển giao diện">
+        <span class="btn-theme-text">Đổi giao diện Sáng / Tối</span>
+      </button>
+    </div>
+    <a href="#contact" class="btn btn-primary btn-block drawer-cta-btn">
+      Đặt lịch ngay
+    </a>
+  </div>
+</aside>
+
+
+<!-- ========================================== -->
+<!-- SERVICE DETAIL MODAL                       -->
+<!-- ========================================== -->
+<div id="modal-backdrop" class="modal-backdrop" aria-hidden="true"></div>
+
+<div 
+  id="service-modal" 
+  class="modal" 
+  role="dialog" 
+  aria-modal="true" 
+  aria-labelledby="modal-service-title" 
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <div class="modal-header-meta">
+          <span id="modal-service-category" class="modal-category-badge">Danh mục</span>
+          <button 
+            type="button" 
+            id="modal-wishlist-btn" 
+            class="modal-fav-btn" 
+            data-action="toggle-wishlist"
+            aria-label="Lưu vào yêu thích" 
+            aria-pressed="false"
+            title="Lưu vào yêu thích"
+          >
+            <svg class="heart-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+          </button>
+        </div>
+        <h2 id="modal-service-title" class="modal-title">Tiêu đề dịch vụ</h2>
+        <button type="button" id="modal-close" class="modal-close-btn" aria-label="Đóng cửa sổ">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+        <!-- Quick stats -->
+        <div class="modal-stats-grid">
+          <div class="modal-stat-card">
+            <span class="stat-label">Mức giá hỗ trợ</span>
+            <span id="modal-service-price" class="stat-val font-accent">Đang tải...</span>
+          </div>
+          <div class="modal-stat-card">
+            <span class="stat-label">Thời gian thực hiện</span>
+            <span id="modal-service-time" class="stat-val">30 - 60 phút</span>
+          </div>
+          <div class="modal-stat-card">
+            <span class="stat-label">Chế độ bảo hành</span>
+            <span id="modal-service-warranty" class="stat-val">Bảo hành 30 ngày</span>
+          </div>
+        </div>
+
+        <!-- Detailed description -->
+        <div class="modal-section">
+          <h3 class="modal-section-title">Mô tả chi tiết dịch vụ</h3>
+          <p id="modal-service-desc" class="modal-desc-text"></p>
+        </div>
+
+        <!-- Features list -->
+        <div class="modal-section">
+          <h3 class="modal-section-title">Hạng mục công việc cam kết</h3>
+          <ul id="modal-service-features" class="modal-features-list"></ul>
+        </div>
+
+        <!-- Recommendations -->
+        <div id="modal-service-recs-container" class="modal-section modal-recs-box">
+          <h3 class="modal-section-title">Lưu ý trước khi thực hiện</h3>
+          <ul id="modal-service-recs" class="modal-recs-list"></ul>
+        </div>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline" data-action="close-modal">
+          Đóng lại
+        </button>
+        <button type="button" id="modal-booking-btn" class="btn btn-primary">
+          Đặt lịch dịch vụ này ngay
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ========================================== -->
+<!-- TOAST NOTIFICATION CONTAINER               -->
+<!-- ========================================== -->
+<div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
