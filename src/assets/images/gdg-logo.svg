@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none">
+  <!-- Geometric GDG & Tech Hardware Shield / Device Icon -->
+  <rect width="48" height="48" rx="12" fill="#161B22" stroke="#30363D" stroke-width="1.5"/>
+  <!-- Left bracket / Blue -->
+  <path d="M17 16L11 24L17 32" stroke="#3B82F6" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Right bracket / Green -->
+  <path d="M31 16L37 24L31 32" stroke="#22C55E" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Tech repair wrench / chip connector in center -->
+  <circle cx="24" cy="24" r="3.5" fill="#3B82F6"/>
+  <path d="M24 14V17M24 31V34M14 24H17M31 24H34" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round"/>
+</svg>

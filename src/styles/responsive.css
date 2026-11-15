@@ -1,0 +1,32 @@
+/* Responsive utility enhancements and media query adjustments */
+
+@media (max-width: 640px) {
+  /* Ensure touch targets are at least 44px on mobile devices */
+  button, 
+  a.btn-interactive,
+  input,
+  select,
+  textarea {
+    min-height: 44px;
+  }
+
+  /* Prevent text clipping in tight mobile headers */
+  .brand-title {
+    font-size: 1.125rem;
+    line-height: 1.35;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  /* Tablet specific layout tuning */
+  .tablet-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Print styles */
+@media print {
+  nav, footer, .theme-toggle, .mobile-drawer {
+    display: none !important;
+  }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GDGRepair - Dịch vụ Chăm sóc & Bảo dưỡng Máy tính | GDG on Campus - DUT</title>
+    <meta
+      name="description"
+      content="Dịch vụ cài đặt Windows bản quyền chính hãng, vệ sinh bảo dưỡng, nâng cấp RAM, SSD và sửa lỗi phần mềm uy tín tại GDG on Campus - Trường Đại học Bách Khoa, ĐHĐN."
+    />
+    <link rel="icon" type="image/svg+xml" href="/src/assets/images/gdg-logo.svg" />
+
+    <!-- Google Fonts Preconnect and Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Theme Initialization Script to prevent flash of wrong theme -->
+    <script>
+      (function () {
+        try {
+          var savedTheme = localStorage.getItem('gdgrepair_theme');
+          if (savedTheme === 'light') {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.classList.add('light');
+            document.documentElement.setAttribute('data-theme', 'light');
+          } else {
+            document.documentElement.classList.add('dark');
+            document.documentElement.classList.remove('light');
+            document.documentElement.setAttribute('data-theme', 'dark');
+          }
+        } catch (e) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
+  </head>
+  <body class="bg-darkBg text-darkText antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/js/main.jsx"></script>
+  </body>
+</html>
